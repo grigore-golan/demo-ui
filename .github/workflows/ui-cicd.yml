@@ -47,6 +47,7 @@ jobs:
           host: ${{ secrets.VM_HOST }}
           username: ${{ secrets.VM_USER }}
           key: ${{ secrets.VM_SSH_KEY }}
+          port: 2222
           script: |
             cd /home/${{ secrets.VM_USER }}/app
             docker compose pull
